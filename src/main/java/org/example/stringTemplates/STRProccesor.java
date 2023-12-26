@@ -19,27 +19,26 @@ public class STRProccesor {
     }
 
     public static void main(String[] args) {
-        printBasicStr("FOLKSDEV BASIC VALUE");
+        printBasicStr("APPCENT BASIC VALUE");
         printJsonStructure(
                 "YOUTUBE",
-                "FOLKSDEV"
+                "APPCENT"
         );
-        printMethod("FOLKSDEV");
-
+        printMethod("APPCENT");
     }
 
     public static void printBasicStr(String value) {
-        String s = STR. "paramters value = \{ value }";
+        String s = STR."paramters value = \{value}";
         System.out.println(s);
     }
 
     public static void printJsonStructure(String oldValue, String newValue) {
-        String json = STR. """
+        String json = STR."""
                 {
-                  "squadName": \{ oldValue },
-                  "homeTown": \{ newValue},
+                  "squadName":\{oldValue},
+                  "homeTown":\{newValue},
                 }
-                """ ;
+                """;
 
         System.out.println(json);
     }
@@ -47,7 +46,7 @@ public class STRProccesor {
 
     public static void printMethod(String value) {
         STRProccesor STRProccesor = org.example.stringTemplates.STRProccesor.of(value);
-        String methodResult = STR. "channel name = \{ STRProccesor.getChannelName().toLowerCase() }" ;
+        String methodResult = STR."channel name = \{STRProccesor.getChannelName().toLowerCase()}";
         System.out.println(methodResult);
     }
 

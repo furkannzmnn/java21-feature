@@ -8,7 +8,6 @@ public class Sequence {
     public static void main(String[] args)  {
         List<String> as = new ArrayList<>();
 
-        HashMap.newHashMap(120);
 
         LinkedHashSet<String> ss = new LinkedHashSet<>();
         ss.addFirst("fff");
@@ -28,11 +27,3 @@ public class Sequence {
     }
 }
 
-
-class MyAutoClosable implements AutoCloseable {
-    public String s = "furkan";
-    @Override
-    public void close() {
-        System.out.println("cloed");
-    }
-}

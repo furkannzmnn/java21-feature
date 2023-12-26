@@ -7,7 +7,7 @@ public final class StringConcatenation {
     }
 
     public String calculateScore(String name, int score) {
-        return "Player " + name + " scored " + score + " points" +
+        return "Player " + name + " scored " + score + " points \n" +
                 " and " + (score > 100 ? "won" : "lost") + ".";
     }
 }

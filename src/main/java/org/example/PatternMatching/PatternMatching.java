@@ -21,7 +21,9 @@ public class PatternMatching {
 
     }
 
-    public static void filterObjectsByType(Object o) {
+
+    public static void filterObjectsByTypes(Object o) {
+
         // Java 21'den önce
         if (o instanceof String s) {
             System.out.println(String.format("This is a string -> %s", s));

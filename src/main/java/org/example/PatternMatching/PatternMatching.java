@@ -23,7 +23,6 @@ public class PatternMatching {
 
 
     public static void filterObjectsByTypes(Object o) {
-
         // Java 21'den önce
         if (o instanceof String s) {
             System.out.println(String.format("This is a string -> %s", s));
@@ -50,8 +49,7 @@ public class PatternMatching {
 
     public static boolean nestedCases(String msg) {
         switch (msg) {
-            case String s
-                    when s.equals("YES") -> {
+            case String s when s.equals("YES") -> {
                 System.out.println("WELCOME!!!");
                 return true;
             }
@@ -86,7 +84,7 @@ public class PatternMatching {
 
     public static void enumSwitch(Shapes s) {
         switch (s) {
-            case CIRCLE -> System.out.println("It is circle");
+            case CIRCLE  -> System.out.println("It is circle");
             case RECTANGLE -> System.out.println("It is rectangle");
             case TRIANGLE -> System.out.println("It is a triangle");
             default -> System.out.println("Unknown Shape");
@@ -95,11 +93,12 @@ public class PatternMatching {
 
     public static void subClassSwitch(Object o) {
         switch (o) {
-            case String s ->    // charsequence tarafından baskılanıyor
+            case String s ->
                     System.out.println("A string: " + s);
-            case CharSequence cs ->
+            case CharSequence cs  when cs.isEmpty()->
                     System.out.println("A sequence of length " + cs.length());
             default -> {
+                System.out.println("e");
                 break;
             }
         }

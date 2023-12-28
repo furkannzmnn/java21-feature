@@ -69,8 +69,8 @@ public class Pattern {
 
         Pair p = new Pair(42, 42);
 
-        if (p instanceof Pair(String s, String t)) {
-            System.out.println(s + ", " + t);
+        if (p instanceof Pair(String s, String _)) {
+            System.out.println(s + ", " );
         } else {
             System.out.println("Not a pair of strings");
         }
